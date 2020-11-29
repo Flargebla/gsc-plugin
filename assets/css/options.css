@@ -7,7 +7,6 @@ body {
 }
 
 #new-gsc-button:hover {
-	font-size: 20pt;
 	cursor: pointer;
 	color: dimgray;
 }
