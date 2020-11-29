@@ -64,10 +64,14 @@ function parseGSCForms(){
 		let gscForm = gscForms[i];
 		let formNameInput = gscForm.querySelector(".gsc-form-name-input");
 		let formContentInput = gscForm.querySelector(".gsc-form-content-input");
-		gscContainers.push({
-			"name": formNameInput.value,
-			"content": formContentInput.value
-		});
+
+		// Only add the container if the row has content AND name
+		if (formNameInput.value.trim() != "" && formContentInput.value.trim() != "") {
+			gscContainers.push({
+				"name": formNameInput.value.trim(),
+				"content": formContentInput.value.trim()
+			});
+		}
 	}
 
 	return gscContainers;
