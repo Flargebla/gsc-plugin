@@ -25,15 +25,15 @@ async function restoreOptions(){
 		console.error("Failed to load options:", e);
 	})
 
-	// Handle first time load
-	if (options === {}) {
+	// Handle first time load (Apparently this is good for empty object?)
+	if (Object.keys(options).length === 0) {
 		let defaultOptions = {
 			"indicator": "!!",
 			"containers": []
 		};
 
 		// Set default values
-		await browser.storage.local.set(defaultOptions).error(e => {
+		await browser.storage.local.set(defaultOptions).catch(e => {
 			console.error("Failed to store defaults:", e)
 		});
 
