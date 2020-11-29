@@ -3,7 +3,7 @@
   "name": "Google Search Containers",
   "version": "0.1",
 
-  "description": "Easily accessible google search presets",
+  "description": "Easily accessible google search contexts",
 
   "icons": {
     "48": "assets/img/gsc-icon48.png",
