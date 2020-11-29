@@ -101,9 +101,11 @@ function createGSCForm(e, gsc){
 	gscName.innerHTML = "Name";
 	gscName.className = "gsc-form-label";
 	gscNameInput.className = "gsc-form-name-input";
+	gscNameInput.setAttribute("size", 10);
 	gscContent.innerHTML = "Content";
 	gscContent.className = "gsc-form-label";
 	gscContentInput.className = "gsc-form-content-input";
+	gscContentInput.setAttribute("size", 40);
 	gscForm.className = "gsc-form";
 
 	// Hook everything together

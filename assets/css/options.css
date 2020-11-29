@@ -1,5 +1,6 @@
 body {
 	padding: 10px;
+	height: 100%;
 }
 
 #new-gsc-button {
@@ -9,4 +10,36 @@ body {
 #new-gsc-button:hover {
 	cursor: pointer;
 	color: dimgray;
+}
+
+.gsc-form {
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 15px;
+}
+
+.gsc-form-label {
+	margin-right: 10px;
+}
+
+.gsc-form-content-input {
+	margin-left: 5px;
+}
+
+.gsc-form-name-input {
+	margin-left: 5px;
+	margin-right: 10px;
+}
+
+.gsc-form-delete-button {
+	display: inline-flex;
+	vertical-align: middle;
+	min-height: 35px;
+	color: red;
+	font-size: 16pt;
+}
+
+.gsc-form-delete-button:hover {
+	color: firebrick;	
+	cursor: pointer;
 }
