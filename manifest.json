@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Google Search Containers",
+  "version": "0.1",
+
+  "description": "Easily accessible google search presets",
+
+  "icons": {
+    "48": "assets/img/gsc-icon48.png",
+    "96": "assets/img/gsc-icon96.png"
+  },
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "https://www.google.com/search*"
+  ],
+
+  "options_ui": {
+    "page": "/options/options.html"
+  },
+
+  "background": {
+    "scripts": ["gsc.js"]
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "admin@gsc.com"
+    }
+  }
+}
