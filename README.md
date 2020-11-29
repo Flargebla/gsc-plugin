@@ -1,7 +1,7 @@
 # gsc-plugin
 Google Search Containers is a convenience plugin for Firefox that adds the ability to make "containerized" searches in the Google search engine. GSC makes the existing Google search syntax more usable by letting users pre-define commonly-used search contexts.
 
-## What does is do?
+## What does it do?
 
 GSC lets the user define search contexts that are easily accessible when googling. I'll explain the original use case using own motivation for building this plugin!
 
